@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7885b528-492d-4049-a03b-70f196d2e9fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Tes-MobileApk/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test-Web/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/Tes-MobileApk.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/Drivers/AndroidDriverPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/Drivers/AndroidDriverPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Productpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Productpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Ratingpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Ratingpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Registerpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/pages/Registerpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/test/mobile/drive/DriverPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/main/java/test/mobile/drive/DriverPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Hooks/AndroidDriverHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Hooks/AndroidDriverHook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Stepdefinations/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Stepdefinations/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Stepdefinations/ProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Stepdefinations/ProductSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesGET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesGET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Login/LoginPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Login/LoginPOST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Register/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Register/POST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionPOST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/CategoriesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/CategoriesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/ProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/ProductSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/RegisterSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test-Web/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Productpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Productpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Ratingpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Ratingpage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Transaksipage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/target/test-classes/starter/pages/Transaksipage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test-Web/target/test-classes/webdriver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/target/test-classes/webdriver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/Remed/Fix github/Tes-MobileApk" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
