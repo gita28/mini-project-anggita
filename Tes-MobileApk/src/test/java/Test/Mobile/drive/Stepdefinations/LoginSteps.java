@@ -7,40 +7,39 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
+import pages.LoginPage;
 import starter.pages.LoginPage;
 import starter.pages.Productpage;
 
 public class LoginSteps {
 
-    AltaShop altaShop = new AltaShop();
-    MyTaskPage myTaskPage = new MyTaskPage();
+     @Steps
+      LoginPage loginPage;
 
-    Given("I am on the login page")
+
+    @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
-        loginPage.openPage();
-        loginPage.validateOnLoginPage();
+        loginPage.isLoginPage();
     }
 
     @When("I input valid email")
     public void iInputValidEmail() {
-        loginPage.inputEmail("gita@gmail.com");
-
-
+        loginPage.inputEmail(String email);
     }
 
     @And("I input valid password")
     public void iInputValidPassword() {
-        loginPage.inputPassword("123");
+        loginPage.inputPassword(String password);
     }
 
     @And("click login button")
     public void clickLoginButton() {
-        loginPage.clickLoginButton();
     }
 
     @Then("I go to product page")
     public void iGoToProductPage() {
         productpage.validateOnProdukfield();
         }
+    }
     }
 

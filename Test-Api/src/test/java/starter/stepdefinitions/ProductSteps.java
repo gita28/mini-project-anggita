@@ -36,10 +36,10 @@ public class ProductSteps {
     }
 
 }
-     @Given ("I set Post api endopoints for Post Product")
-     public void setPostApiEndopointsForPostProduct() {
-         productPOST.setPostApiEndopointsForPostProduct();
-     }
+    @Given ("I set Post api endopoints for Post Product")
+    public void setPostApiEndopointsForPostProduct() {
+        productPOST.setPostApiEndopointsForPostProduct();
+    }
 
     @When ("I send Http request Post Product")
     public void sendHttpResquestPostProduct() {
@@ -59,24 +59,24 @@ public class ProductSteps {
 
     }
 
-        @Given ("I set api endopoints for get id product")
-        public void setApiEndopointsForGetIdProduct() {
-            getid.sendtHttpRequestGetIdProduct();
-        }
+    @Given ("I set api endopoints for get id product")
+    public void setApiEndopointsForGetIdProduct() {
+        getid.sendtHttpRequestGetIdProduct();
+    }
 
-        @When ("I send Http request get id product")
-public void sendtHttpRequestGetIdProduct() {
-    getid.sendtHttpRequestGetIdProduct();
-        }
-        @Then("I receive verify product id HTTP response 200")
-public void receiveVerifyProductIdHttpResponse200(){
+    @When ("I send Http request get id product")
+    public void sendtHttpRequestGetIdProduct() {
+        getid.sendtHttpRequestGetIdProduct();
+    }
+    @Then("I receive verify product id HTTP response 200")
+    public void receiveVerifyProductIdHttpResponse200(){
         getid.receiveVerifyProductIdHttpResponse200();
-        }
+    }
 
-        @And("I receive valid data get id product ")
-public void validateDataGetIdProduct(){
+    @And("I receive valid data get id product ")
+    public void validateDataGetIdProduct(){
         getid.validateDataGetIdProduct();
-        }
+    }
 
 }
 

@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class Ratingpage extends PageObject {
 
     private By Ratingfield() {
-        return By.xpath("//*[@id=1468]");
+        return MobileBy.xpath("//*[@id=1468]");
     }
 
     @Step

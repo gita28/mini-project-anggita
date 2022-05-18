@@ -11,11 +11,6 @@ import starter.pages.Transaksipage;
 
 public class ProductSteps {
 
-    Productpage productpage;
-
-    Transaksipage transaksipage;
-
-    Ratingpage ratingpage;
 
     @Given("I am on the Product page" )
     public void iamOnTheProductPage() {

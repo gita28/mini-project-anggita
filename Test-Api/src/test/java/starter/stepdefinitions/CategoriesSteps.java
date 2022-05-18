@@ -37,25 +37,25 @@ public class CategoriesSteps {
     public void receiveValidDataGetCategories(){
         categoriesGET.receiveValidDataGetCategories();
 
-}
+    }
     @Given("I set api endopoints for Post categories")
     public void setPostApiEndopointsForPostCategories(){
-       categoriesPOST.setApiEndopointsForPostCategories();
+        categoriesPOST.setApiEndopointsForPostCategories();
     }
 
     @When("I send Http request Pos categories")
     public void sendHttpResquestPostCategories(){
-      categoriesPOST.sendHttpResquestPostCategories();
+        categoriesPOST.sendHttpResquestPostCategories();
     }
 
     @Then("I receive validate categories the status code is response 200")
     public void receiveValidateCategoriesTheStatusCodeIsResponse200(){
-      categoriesPOST.receiveValidateCategoriesTheStatusCodeIsResponse200();
+        categoriesPOST.receiveValidateCategoriesTheStatusCodeIsResponse200();
     }
 
     @And("I receive valid data Post categories")
     public void receiveValidDataPostCategories(){
-    categoriesPOST.receiveValidDataPostCategories();
+        categoriesPOST.receiveValidDataPostCategories();
     }
 }
 

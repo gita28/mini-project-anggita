@@ -4,22 +4,22 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-public class Registerpage extends PageObject {
+public class Registerpage extends BasePageObject {
 
 
     private By UsernameField() {
-        return By.xpath("//*[label[text()='Email']]/input");
+        return MobileBy.xpath("textInputEditTextUsername");
     }
 
     private By EmailField() {
-        return By.xpath("//*[label[text()='password']]/input");
+        return MobileBy.xpath(" ");
     }
 
     private By PaswordField() {
-        return By.xpath("L ");}
+        return MobileBy.xpath("L ");}
 
     private By ButtonRegisterField() {
-        return By.xpath("//*[label[text()='password']]/input");
+        return By.xpath(" ");
     }
 
     @Step

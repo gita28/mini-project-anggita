@@ -40,7 +40,7 @@ public class LoginPOST {
             file.flush();
         } catch (IOException e) {
             e.printStackTrace();
+        }
     }
-}
 
 }

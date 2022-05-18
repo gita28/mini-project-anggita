@@ -21,13 +21,13 @@ public class CategoriesGET {
 
     @Step("I receive verify categories HTTP response 200")
     public void receiveVerifyCategoriesHttpRequestResponse200 () {
-    restAssuredThat(response ->response.statusCode(200));
-}
-@Step ("I receive valid data get categories")
-public void receiveValidDataGetCategories(){
-    restAssuredThat();(response -> response.body("'data'.'id'", equalsTo("1")));
-    restAssuredThat();(response -> response.body("'data'.'name'", equalsTo("kesehatan")));
-    restAssuredThat();(response -> response.body("'data'.'Description'", equalsTo("  ")));
+        restAssuredThat(response ->response.statusCode(200));
+    }
+    @Step ("I receive valid data get categories")
+    public void receiveValidDataGetCategories(){
+        restAssuredThat();(response -> response.body("'data'.'id'", equalsTo("1")));
+        restAssuredThat();(response -> response.body("'data'.'name'", equalsTo("kesehatan")));
+        restAssuredThat();(response -> response.body("'data'.'Description'", equalsTo("  ")));
 
 
     }

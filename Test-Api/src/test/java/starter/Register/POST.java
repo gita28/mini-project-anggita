@@ -31,10 +31,10 @@ public class POST {
 
     @Step("I receive valid data for new user")
     public void validateDatailnewUser(){
-        restAssuredThat(respose -> respose.body(matcher): "'data'.'id'",equalsTo(4183)));
-        restAssuredThat(respose -> respose.body(matcher): "'data'.'fullname'",equalsTo("Alex Under")));
-        restAssuredThat(respose -> respose.body(matcher): "'data'.'email'",equalsTo("gita@email.com")));
-        restAssuredThat(respose -> respose.body(matcher): "'data'.'password'",equalsTo(123123123)));
+        restAssuredThat(respose -> respose.body(matcher)): "'data'.'id'",equalsTo(4183)));
+        restAssuredThat(respose -> respose.body(matcher)): "'data'.'fullname'",equalsTo("Alex Under")));
+        restAssuredThat(respose -> respose.body(matcher)): "'data'.'email'",equalsTo("gita@email.com")));
+        restAssuredThat(respose -> respose.body(matcher)): "'data'.'password'",equalsTo(123123123)));
 
         }
 

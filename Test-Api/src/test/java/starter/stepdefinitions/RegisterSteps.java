@@ -24,7 +24,7 @@ public class RegisterSteps {
 
     @Then("I receive validate register the status code is response 400")
     public void receiveValidateRegisterTheStatusCodeIsResponse400(){
-    post.receiveValidateRegisterTheStatusCodeIsResponse400();
+        post.receiveValidateRegisterTheStatusCodeIsResponse400();
     }
 
     @And("I receive valid data for new user")

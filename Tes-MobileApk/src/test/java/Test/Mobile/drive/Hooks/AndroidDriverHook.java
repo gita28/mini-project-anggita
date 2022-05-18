@@ -1,18 +1,32 @@
 package Test.Mobile.drive.Hooks;
 
+import test.mobile.drive.DriverPool;
+
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 public class AndroidDriverHook {
-    @Before
-    public void before(){
-        AndroidDriverInit.initialize();
-    }
+
+    public DriverPool driverPool = new DriverPool();
+
 
     @After
-    public void afterDriver(Scenario scenario) {
-        if (scenario.isFailed()){
-            TakesScreenshot screenshot = AndroidDriverInit.driver;
-            byte[] imageByte = screenshot.getScreenshotAs(OutputType.BYTES);
-            scenario.attach(imageByte, "image/png", scenario.getId());
-        }
-        AndroidDriverInit.quit();
+    public void afterTest(Scenario scenario) {
+        quitAndroidDrivers();
     }
+
+    public void quitAndroidDrivers(DriverPool drivers) {
+        Optional.ofNullable(drivers.getAndroidDriver()).ifPresent(
+                driver -> {
+                    driver.quit();
+                    drivers.setAndroidDriver(null);
+
+                }
+
+
+        );
+    }
+
 }
+
+
