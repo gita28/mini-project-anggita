@@ -1,10 +1,11 @@
 package pages;
 
+import Base.BasepageObject;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.By;
 
-public class Transaksipage extends PageObject {
+public class TransaksiScreen extends BasepageObject {
 
     private By SetItemfield() {
         return MobileBy.xpath("//*[@id=\"order-1468\"]/div[2]/button[1]/span");

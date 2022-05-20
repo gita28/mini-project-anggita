@@ -4,6 +4,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.ProductScreen;
+import pages.RatingScreen;
+import pages.TransaksiScreen;
 import starter.pages.Productpage;
 import starter.pages.Ratingpage;
 import starter.pages.Transaksipage;
@@ -11,37 +14,45 @@ import starter.pages.Transaksipage;
 
 public class ProductSteps {
 
+    @Step
+    ProductScreen productScreen;
+
+    @Step
+    RatingScreen ratingScreen;
+
+    @Step
+    TransaksiScreen transaksiScreen;
 
     @Given("I am on the Product page" )
     public void iamOnTheProductPage() {
-     productpage.openPage();
-     productpage. validateOnProdukfield();;
+     productScreen.openPage();
+
     }
 
     @When("I click Select button buy product")
     public void iClickSelectButtonBuyProduct() {
-     productpage.clickbuyField();
+     productScreen.clickbuyField();
 
     }
     @And("click button shopping cart")
     public void clickButtonShoppingCart() {
-     productpage.clickShoppingcartButton();
+     productScreen.clickShoppingcartButton();
 
     }
 
     @Then("I go to transaksi page")
     public void iGoToTransaksiPage() {
-      transaksipage.validateOnTransaksiPage();
+      transaksiScreen.validateOnTransaksiPage();
     }
 
     @And("click button rating")
     public void cLickButtonRatingPage () {
-      productpage.clickratingfield();
+      productScreen.clickButtonRatingPage();
     }
 
     @Then("I go to rating page")
     public void iGoToRatingPage() {
-        ratingpage.validateOnRatingPage();
+        ratingScreen.validateOnRatingPage();
         }
     }
 

@@ -4,8 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.RegisterScreen;
 
 public class RegisterSteps {
+
+    RegisterScreen registerScreen;
 
     @Given("I am on the Register page")
     public void iAmOnTheRegisterPage() {

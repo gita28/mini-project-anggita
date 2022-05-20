@@ -20,23 +20,17 @@ public class AndroidDriverPool {
 
         public static void initialize(){
         DesiredCapabilities caps= new DesiredCapabilities();
-        String appiumURL = " appkjl"
+        String appiumURL = " "
                 caps.setCapability(AndroidMobileCapabilityType.PLATFORM_NAME,"Android");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
                 caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,"29.0");
                 caps.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+ File.separator + "app/alta-online-shop.apk");
 
                 try {
-                    driver = new AndroidDriver
+                    driver = new AndroidDriver<AndroidElement>(new URL(appiumURL), caps);
+                }catch (MalformedURLException e) {
 
-
-
-                }
-                return
-                     driver = new AndroidDriver<AndroidElement>(new URL(:"appiumUrl"), caps);
-        }catch(MalformedURLException e){
-            e.printStackTrace();
-        }
+                    e.printStackTrace();
     }
 return driver;
     }

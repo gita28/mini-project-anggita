@@ -33,7 +33,7 @@ public class BasepageObject {
         return (AndroidElement) onWait().until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
-    public void onClick(By by) {
+    public void onClick( By by) {
         waitUntilClickable(by).click();
 
     }
