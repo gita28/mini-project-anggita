@@ -24,12 +24,12 @@ public class GETID {
     @Step("I receive valid data get id product")
     public void validateDataGetIdProduct(){
 
-        restAssuredThat();(respose -> respose.body("'data'.'id'",equalsTo(1468)));
-        restAssuredThat();(respose -> respose.body("'data'.'name'",equalsTo("Tensi Darah Elektrik")));
-        restAssuredThat();(respose -> respose.body("'data'.'descriptions'",equalsTo(" ")));
-        restAssuredThat();(respose -> respose.body("'data'.'price'",equalsTo("24000")));
-        restAssuredThat();(respose -> respose.body("'data'.'rating'",equalsTo("0")));
-        restAssuredThat();(respose -> respose.body("'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
+        restAssuredThat(respose -> respose.body("'data'.'id'",equalsTo(1468)));
+        restAssuredThat(respose -> respose.body("'data'.'name'",equalsTo("Tensi Darah Elektrik")));
+        restAssuredThat(respose -> respose.body("'data'.'descriptions'",equalsTo(" ")));
+        restAssuredThat(respose -> respose.body("'data'.'price'",equalsTo("24000")));
+        restAssuredThat(respose -> respose.body("'data'.'rating'",equalsTo("0")));
+        restAssuredThat(respose -> respose.body("'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
     }
 }
 

@@ -7,41 +7,24 @@ import org.openqa.selenium.By;
 
 public class ProductScreen extends BasepageObject {
 
-    private By Produkfield(){
-        return MobileBy.xpath("  ");
+    private By Buttonbuyfield() {
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"Beli\"])[1]");
     }
 
-    private By Buttonbuyfield() {
-        return MobileBy.xpath("   "); }
-
-    private By Shoppingcartfield(){
-        return MobileBy.xpath("   "); }
-
-    private By Buttonratingfield (){
-        return MobileBy.xpath("   "); }
+    private By Shoppingcartfield() {
+        return MobileBy.xpath("(//android.widget.Button[@content-desc=\"1\"])");
+    }
 
 
-        @Step
-        public void iamOnTheProductPage ()
-        {open();}
+    @Step
+    public void iClickSelectButtonBuyProduct() {
+        onClick(Buttonbuyfield());
+    }
 
-        @Step
-         public void iClickSelectButtonBuyProduct ()
-        {$(Buttonbuyfield()).click(); }
+    @Step
+    public void clickShoppingcartButton() {
+        onClick(Shoppingcartfield());
+    }
 
-        @Step
-        public void clickShoppingcartButton()
-        {$(Shoppingcartfield()).click();}
-
-        @Step
-        public void clickButtonShoppingCar()
-        {$(Produkfield()).isDisplayed();}
-
-        @Step
-        public void iGoToTransaksiPage()
-        { $(Buttonratingfield()).isDisplayed();}
-
-
-            }
-
+}
 

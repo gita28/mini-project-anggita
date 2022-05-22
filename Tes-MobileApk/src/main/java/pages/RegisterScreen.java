@@ -1,47 +1,55 @@
 package pages;
 
+import Base.BasepageObject;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-public class RegisterScreen extends BasePageObject {
-    public String name = createRandomName();
-
-    public String password ="password!2";
+public class RegisterScreen extends BasepageObject {
 
     private By UsernameField() {
-        return MobileBy.xpath("textInputEditTextUsername");
+        return MobileBy.xpath("//android.view.View/android.view.View/android.view.View/android.widget.EditText[1]");
     }
 
-    private By emailField() {
-        return MobileBy.xpath(" ");
+    private By emailFieldregister() {
+        return MobileBy.xpath("//android.view.View/android.view.View/android.view.View/android.widget.EditText[2]");
     }
 
-    private By passwordField() {
-        return MobileBy.xpath("L ");}
+    private By passwordFieldregister() {
+        return MobileBy.xpath("//android.view.View/android.view.View/android.view.View/android.widget.EditText[3]");
+    }
 
     private By ButtonRegisterField() {
-        return MobileBy.xpath(" ");
+        return MobileBy.xpath("//android.widget.Button[@content-desc=\"Register\"]");
+    }
+
+
+    @Step
+    public void iInputValidUsernameRegister(String username) {
+        onType(UsernameField(),username);
     }
 
     @Step
-    public void inputNameField() {
-        Faker faker= new Faker();
-        name = faker.name().fristName();
-        dfonType(inputNameField(), name)
+    public void iInputValidEmailRegister(String emailregister) {
+        onType(emailFieldregister(), emailregister);
     }
 
     @Step
-    public boolean inputEmailField(){
-        return $(emailField(), name + "@gmail.com");
+    public void inputPasswordRegister(String passwordRegister) {
+        onType(passwordFieldregister(), passwordRegister);
     }
 
     @Step
-    public void inputEmail(String email){
-        $(EmailField()).type(email);
+    public void clickLoginButtonRegister() {
+        onClick(ButtonRegisterField());
+
+
     }
 
 }
+
+
+
 
 
 

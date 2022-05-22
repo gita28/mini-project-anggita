@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7885b528-492d-4049-a03b-70f196d2e9fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Tes-MobileApk/src/test/java/Test/Mobile/drive/Stepdefinations/RatingSteps.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesGET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesGET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Categories/CategoriesPOST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Product/GETID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Product/GETID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Product/ProductGET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Product/ProductGET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Product/ProductPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Product/ProductPOST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Register/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Register/POST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionGET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionGET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionPOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/Transaction/TransactionPOST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/ProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/ProductSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/TransactionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/TransactionSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Feature/Chapter 04/Product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Feature/Chapter 04/Product.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test-Web/src/test/java/starter/stepdefinitions/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test-Web/src/test/java/starter/stepdefinitions/RegisterSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="E:/Remed/Fix github/Tes-MobileApk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gita/rest-assured-master" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

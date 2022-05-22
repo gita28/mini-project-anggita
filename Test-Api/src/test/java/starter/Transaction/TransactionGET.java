@@ -21,8 +21,7 @@ public class TransactionGET {
     @Step("I receive valid data get categories")
     public void receiveValidDataGetTransaction() {
 
-        restAssuredThat();(response -> response.body("'data'",equalsTo("[ ]")));
-
+        restAssuredThat(response -> response.body("'data'",equalsTo("[ ]")));
 
     }
 

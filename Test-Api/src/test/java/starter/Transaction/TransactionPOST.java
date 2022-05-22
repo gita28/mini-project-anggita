@@ -24,13 +24,13 @@ public class TransactionPOST {
     }
     @Step("I receive valid data Pos categories")
     public void receiveValidDataPosTrasaction(){
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'id'",equalsTo("2932")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'User'.'id'",equalsTo("132")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'Fullname'",equalsTo("Alex Under")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'Email'",equalsTo("alexunder@email.com")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'Password'",equalsTo("123123123")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'Product'",equalsTo("null")));
-        restAssuredThat(respose -> respose.body(matcher)): "'data'.'Quantity'",equalsTo("2")));
+        restAssuredThat(respose -> respose.body("'data'.'id'",equalsTo("2932")));
+        restAssuredThat(respose -> respose.body( "'data'.'User'.'id'",equalsTo("132")));
+        restAssuredThat(respose -> respose.body("'data'.'Fullname'",equalsTo("Alex Under")));
+        restAssuredThat(respose -> respose.body("'data'.'Email'",equalsTo("alexunder@email.com")));
+        restAssuredThat(respose -> respose.body( "'data'.'Password'",equalsTo("123123123")));
+        restAssuredThat(respose -> respose.body("'data'.'Product'",equalsTo("null")));
+        restAssuredThat(respose -> respose.body("'data'.'Quantity'",equalsTo("2")));
 
 
 

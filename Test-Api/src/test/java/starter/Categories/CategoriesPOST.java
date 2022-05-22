@@ -23,14 +23,14 @@ public class CategoriesPOST {
 
     @Step("I receive validate categories the status code is response 200")
     public void receiveValidateCategoriesTheStatusCodeIsResponse200() {
-        restAssuredThat(response -> response.statusCode));(200)));
+        restAssuredThat(response -> response.statusCode(200));
     }
     @Step("I receive valid data Post categories")
     public void receiveValidDataPostCategories(){
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'id'",equalsTo("1104")));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'name'",equalsTo("kesehatan")));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'Description'",equalsTo(" ")));
+        restAssuredThat(respose -> respose.body("'data'.'id'",equalsTo("1104")));
+        restAssuredThat(respose -> respose.body("'data'.'name'",equalsTo("kesehatan")));
+        restAssuredThat(respose -> respose.body("'data'.'Description'",equalsTo(" ")));
     }
 }
 
-}
+

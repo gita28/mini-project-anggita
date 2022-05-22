@@ -24,12 +24,12 @@ public class ProductGET {
     @Step("I receive valid data get product")
     public void receiveValiddataGetProduct(){
 
-        restAssuredThat();(response -> response.body("'data'.'id'", equalsTo("1")));
-        restAssuredThat();(respose -> respose.body("'data'.'id'",equalsTo("1479")));
-        restAssuredThat();(respose -> respose.body("'data'.'name'",equalsTo("Tensi Darah Elektrik")));
-        restAssuredThat();(respose -> respose.body("'data'.'descriptions'",equalsTo(" ")));
-        restAssuredThat();(respose -> respose.body("'data'.'price'",equalsTo("24000")));
-        restAssuredThat();(respose -> respose.body("'data'.'rating'",equalsTo("0")));
-        restAssuredThat();(respose -> respose.body("'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
+        restAssuredThat(response -> response.body("'data'.'id'", equalsTo("1")));
+        restAssuredThat(respose -> respose.body("'data'.'id'",equalsTo("1479")));
+        restAssuredThat(respose -> respose.body("'data'.'name'",equalsTo("Tensi Darah Elektrik")));
+        restAssuredThat(respose -> respose.body("'data'.'descriptions'",equalsTo(" ")));
+        restAssuredThat(respose -> respose.body("'data'.'price'",equalsTo("24000")));
+        restAssuredThat(respose -> respose.body("'data'.'rating'",equalsTo("0")));
+        restAssuredThat(respose -> respose.body("'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
     }
 }

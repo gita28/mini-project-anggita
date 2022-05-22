@@ -13,23 +13,19 @@ public class TransaksiSteps {
 
     @Given("I am on the Transaction page")
     public void iAmOnTheTransactionPage() {
-     transaksiScreen.
     }
 
-    @When("I am set item quanty")
-    public void iAmSetItemQuanty() {
+    @When ("I am set item quanty")
+    public void IamSetItemQuanty(){
 
     }
 
-    @And("click login button")
-    public void clikLoginButton() {
+    @And("click transaksi button")
+    public void cliktransaksiButton() {
+        transaksiScreen.cliktransaksiButton();
     }
 
-    @Then("sucses transaction")
-    public void sucsesTransaction() {
-
-        }
-    }
+}
 
 
 

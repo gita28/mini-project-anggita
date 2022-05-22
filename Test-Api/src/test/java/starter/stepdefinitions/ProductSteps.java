@@ -15,7 +15,7 @@ public class ProductSteps {
     @Step
     ProductPOST productPOST;
 
-    @Given("I set api endopoints for get product");
+    @Given("I set api endopoints for get product")
     public void setApiEndopointForGetProduct() {
         productGET.setApiEndopointForGetProduct();
     }
@@ -35,7 +35,6 @@ public class ProductSteps {
         productGET.receiveValiddataGetProduct();
     }
 
-}
     @Given ("I set Post api endopoints for Post Product")
     public void setPostApiEndopointsForPostProduct() {
         productPOST.setPostApiEndopointsForPostProduct();
@@ -43,21 +42,18 @@ public class ProductSteps {
 
     @When ("I send Http request Post Product")
     public void sendHttpResquestPostProduct() {
-        productPOST.sendHttpResquestPostProduct() {
+        productPOST.sendHttpResquestPostProduct();
 
-        }
-
-        @Then("I receive validate product the status code is response 201")
-        public void receiveValidateProductTheStatusCodeIsResponse201 () {
-            productPOST.receiveValidateProductTheStatusCodeIsResponse201();
+    }
+        @Then("I receive validate product the status code is response 200")
+        public void receiveValidateProductTheStatusCodeIsResponse200 () {
+            productPOST.receiveValidateProductTheStatusCodeIsResponse200();
         }
 
         @And("I receive valid data Post Product transaction")
         public void receiveValidDataPostProductTransaction() {
             productPOST.receiveValidDataPostProductTransaction();
         }
-
-    }
 
     @Given ("I set api endopoints for get id product")
     public void setApiEndopointsForGetIdProduct() {

@@ -27,8 +27,8 @@ public class RegisterSteps {
 
     }
 
-    @And("click login button")
-    public void clickLoginButton() {
+    @And("click register button")
+    public void clickRegisterButton() {
 
     }
     @Then("I go to login page")

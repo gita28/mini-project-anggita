@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class DriverPool {
 
-    private HashMap<String,AndroidDriver> android = new HashMap<>();
+    private HashMap<String, AndroidDriver> android = new HashMap<>();
 
     public AndroidDriver getAndroidDriver(){
         return this.android.get(Thread.currentThread().getName( ));
@@ -14,7 +14,7 @@ public class DriverPool {
     }
 
     public void setAndroidDriver (AndroidDriver androidDriver){
-        this.android.put(Thread.currentThread()).getName(),androidDriver);
-
+        this.android.put(Thread.currentThread().getName(),androidDriver);
     }
-}
+    }
+

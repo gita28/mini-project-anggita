@@ -15,26 +15,27 @@ public class RegisterSteps {
     }
 
     @When("I input valid username")
-    public void iInputValidUsername() {
+    public void iInputValidUsername(){
+        registerScreen.iInputValidUsernameRegister("Anggita");
 
     }
 
     @And("I input valid email")
-    public void iInputValidEmail() {
+    public void iInputValidEmailRegister() {
+        registerScreen.iInputValidEmailRegister("Anggitaaprilia2001@gmail.com");
 
     }
 
     @And("I input valid password")
-    public void iInputValidPassword() {
+    public void inputPasswordRegister() {
+        registerScreen.inputPasswordRegister("12345");
 
     }
 
-    @And("click login button")
-    public void clickLoginButton() {
+    @And("click register button")
+    public void clickLoginButtonRegister() {
+registerScreen.clickLoginButtonRegister();
 
-    }
-    @Then("I go to login page")
-    public void iGoToLoginPage() {
 
     }
 

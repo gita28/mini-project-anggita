@@ -9,7 +9,7 @@ Feature: Product
   Scenario: POST - Product
     Given I set Post api endopoints for Post Product
     When I send Http request Post Product
-    Then I receive validate product the status code is response 201
+    Then I receive validate product the status code is response 200
     And I receive valid data Product transaction
 
     Scenario: Get id - Product

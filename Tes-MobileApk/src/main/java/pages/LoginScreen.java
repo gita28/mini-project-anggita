@@ -9,33 +9,31 @@ import javax.swing.*;
 
 public class LoginScreen extends BasepageObject {
 
+
     private By emailField() {
-        return MobileBy.id("textInputEditTextEmail");
+        return MobileBy.xpath("//android.view.View/android.view.View/android.view.View/android.widget.EditText[1]");
 
     }
 
-    private By PasswordField() {
-        return By.id("textInputEditTextPassword");
+    private By passwordField() {
+        return MobileBy.xpath("//android.view.View/android.view.View/android.view.View/android.widget.EditText[2]");
 
     }
     private By LoginButton() {
-        return By.id(" ");
+        return MobileBy.xpath("//android.widget.Button[@content-desc=\"Login\"]");
+
     }
-   }
+
    @Step
-    public void iAmOnTheLoginPage() {
-       return waitUntilVisible(LoginButton()).isDisplayed();
-   }
-   @Step
-    public void iInputValidEmail(String email) {
+    public void iInputValidEmailLogin(String email) {
         onType(emailField(),email);
    }
    @Step
-   public void iInputValidPassword(String password)
-     onType (PasswordField(),password);
+   public void iInputValidPasswordLogin(String password){
+     onType(passwordField(),password);
    }
    @Step
-   public void clickLoginButton(){
+   public void clickLoginButtonLogin(){
      onClick(LoginButton());
 
    }

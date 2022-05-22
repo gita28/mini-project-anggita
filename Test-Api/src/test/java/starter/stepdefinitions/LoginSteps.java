@@ -32,8 +32,6 @@ public class LoginSteps {
 
     @And("I receive valid data for user")
     public void receiveValidDatailForUser();
-    System.out.println ("alex")
-
     {
         loginPOST.postLogin();
     }

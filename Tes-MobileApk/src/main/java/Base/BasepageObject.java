@@ -31,19 +31,22 @@ public class BasepageObject {
 
     public AndroidElement waitUntilVisibel(By by) {
         return (AndroidElement) onWait().until(ExpectedConditions.visibilityOfElementLocated(by));
+
     }
 
-    public void onClick( By by) {
+    public void onClick(By by) {
         waitUntilClickable(by).click();
-
     }
-
-    public void onType(By by, CharSequence... keysToSend) {
+    public void onType(By by,CharSequence... keysToSend) {
         waitUntilPresence(by).sendKeys(keysToSend);
     }
-    public void clear(By by) {
+
+    public void clear(By by){
         waitUntilPresence(by).clear();
+
     }
+}
+
 
 
 

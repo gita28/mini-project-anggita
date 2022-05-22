@@ -21,19 +21,20 @@ public class ProductPOST {
         SerenityRest.given().header("Content-Type", "applications/json").body(requestBody.toJSONString()).post(setPostApiEndopointsForPostProduct());
     }
 
-    @Step("I receive validate product the status code is response 201")
-    public void receiveValidateProductTheStatusCodeIsResponse201 () {
-        restAssuredThat(response -> response.statusCode(201));
+    @Step("I receive validate product the status code is response 200")
+    public void receiveValidateProductTheStatusCodeIsResponse200 () {
+        restAssuredThat(response -> response.statusCode(200));
     }
     @Step("I receive valid data Post Product transaction")
     public void receiveValidDataPostProductTransaction(){
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'id'",equalsTo(1508)));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'name'",equalsTo("Tensi Darah Elektrik")));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'descriptions'",equalsTo(" ")));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'price'",equalsTo("24000")));
-        restAssuredThat(respose -> respose.body(matcher)); "'data'.'rating'",equalsTo("0")));
-        restAssuredThat (respose -> respose.body(matcher)); "'data'.'categories'",equalsTo(" ")));
-        restAssuredThat (respose -> respose.body(matcher)); "'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
+
+        restAssuredThat(respose -> respose.body("'data'.'id'",equalsTo(1508)));
+        restAssuredThat(respose -> respose.body("'data'.'name'",equalsTo("Tensi Darah Elektrik")));
+        restAssuredThat(respose -> respose.body("'data'.'descriptions'",equalsTo(" ")));
+        restAssuredThat(respose -> respose.body("'data'.'price'",equalsTo("24000")));
+        restAssuredThat(respose -> respose.body("'data'.'rating'",equalsTo("0")));
+        restAssuredThat (respose -> respose.body("'data'.'categories'",equalsTo(" ")));
+        restAssuredThat (respose -> respose.body("'data'.'Categories [0].'id'.'name'.'description'",equalsTo("3", "alat", "6" ,"kesehatan")));
 
     }
 }

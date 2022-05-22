@@ -7,29 +7,14 @@ import org.openqa.selenium.By;
 
 public class TransaksiScreen extends BasepageObject {
 
-    private By SetItemfield() {
-        return MobileBy.xpath("//*[@id=\"order-1468\"]/div[2]/button[1]/span");
-    }
-
     private By ButtonTransactionfield() {
-        return MobileBy.xpath("//*[@id=\"button-bayar\"]");
+        return MobileBy.xpath("\"(//android.widget.Button[@content-desc=\\\"Beli\\\"])[2]\" ");
     }
 
-    @Step
-    public void openPage() {
-        open();
-    }
-    @Step
-    public void clickSetItem () {$(SetItemfield()).click(); }
 
     @Step
-    public void clickButtonTransaction() { $(ButtonTransactionfield()).click();
-    }
-
-    @Step
-    public boolean validateOnTransaksiPage() {
-        return $(ButtonTransactionfield()).isDisplayed();
-
+    public void cliktransaksiButton() {
+        onClick(ButtonTransactionfield());
     }
 }
 

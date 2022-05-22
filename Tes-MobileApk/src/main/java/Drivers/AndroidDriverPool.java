@@ -7,6 +7,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import javafx.scene.chart.ValueAxis;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import test.mobile.drive.DriverPool;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -18,21 +19,22 @@ public class AndroidDriverPool {
     public static AndroidDriver create() {
         AndroidDriver<AndroidElement> driver = null;
 
-        public static void initialize(){
-        DesiredCapabilities caps= new DesiredCapabilities();
-        String appiumURL = " "
-                caps.setCapability(AndroidMobileCapabilityType.PLATFORM_NAME,"Android");
-                caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-                caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,"29.0");
-                caps.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+ File.separator + "app/alta-online-shop.apk");
+            DesiredCapabilities caps = new DesiredCapabilities();
 
-                try {
-                    driver = new AndroidDriver<AndroidElement>(new URL(appiumURL), caps);
-                }catch (MalformedURLException e) {
+            String appiumURL = "http://127.0.0.1:4723/wd/hub";
 
-                    e.printStackTrace();
-    }
-return driver;
-    }
+            caps.setCapability(AndroidMobileCapabilityType.PLATFORM_NAME, "Android");
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "29.0");
+            caps.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + File.separator + "app/alta-online-shop.apk");
+
+            try {
+                driver = new AndroidDriver<AndroidElement>(new URL(appiumURL), caps);
+            } catch (MalformedURLException e) {
+
+                e.printStackTrace();
+            }
+            return driver;
+        }
 }
 

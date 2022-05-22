@@ -21,17 +21,17 @@ public class TransactionSteps {
     }
 
     @When("I send Http request get transaction")
-    public void sendPostHttpRequestGetTransaction(){
+    public void sendPostHttpRequestGetTransaction() {
         transactionGET.sendPostHttpRequestGetTransaction();
     }
 
     @Then("I receive verify transaction HTTP response 200")
-    public void receiveVerifyTransactionHTTPResponse200(){
+    public void receiveVerifyTransactionHTTPResponse200() {
         transactionGET.receiveVerifyTransactionHTTPResponse200();
     }
 
     @And("I receive valid data get transaction")
-    public void receiveValidDataGetTransaction(){
+    public void receiveValidDataGetTransaction() {
         transactionGET.receiveValidDataGetTransaction();
     }
 
@@ -40,20 +40,21 @@ public class TransactionSteps {
     public void setPostApiEndopointForPostTransaction() {
         transactionPOST.setPostApiEndopointForPostTransaction();
     }
+
     @When("I send Http request Post transaction")
-    public void sendPostHttpRequestPostTransaction(){
+    public void sendPostHttpRequestPostTransaction() {
         transactionPOST.sendPostHttpRequestPostTransaction();
     }
 
     @Then("I receive validate transaction the status code is response 201")
-    public void receiveValidateTransactionTheStatusCodeIsResponse201(){
-        transactionPOST.receiveValidateTransactionTheStatusCodeIsResponse201 ();
+    public void receiveValidateTransactionTheStatusCodeIsResponse201() {
+        transactionPOST.receiveValidateTransactionTheStatusCodeIsResponse201();
     }
 
     @And("I receive valid data Pos transaction")
-    public void receiveValidDataPosTrasaction(){
+    public void receiveValidDataPosTrasaction() {
         transactionPOST.receiveValidDataPosTrasaction();
     }
 
-
+}
 

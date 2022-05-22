@@ -12,7 +12,7 @@ public class AndroidDriverHook {
 
     @After
     public void afterTest(Scenario scenario) {
-        quitAndroidDrivers();
+        quitAndroidDrivers(test.mobile.drive.DriverPool);
     }
 
     public void quitAndroidDrivers(DriverPool drivers) {
@@ -21,10 +21,7 @@ public class AndroidDriverHook {
                     driver.quit();
                     drivers.setAndroidDriver(null);
 
-                }
-
-
-        );
+                });
     }
 
 }
